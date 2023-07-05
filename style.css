@@ -13,6 +13,9 @@ body {
   align-items: stretch;
 
   border-style: solid;
+  border-width: 7.5vmin;
+  border-radius: 2vmin;
+  border-color: hsl(0 90% 50%);
 }
 
 .row {
