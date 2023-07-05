@@ -16,6 +16,7 @@ body {
   border-width: 7.5vmin;
   border-radius: 2vmin;
   border-color: hsl(0 90% 50%);
+  background-color: hsl(0 90% 50%);
 }
 
 .row {
@@ -37,4 +38,20 @@ body {
 .cell.full {
   border-color: hsl(0 0% 20%);
   background-color: hsl(0 0% 10%);
+}
+
+.cell.corner.LT {
+  border-radius: 2vmin 0 0 0;
+}
+
+.cell.corner.RT {
+  border-radius: 0 2vmin 0 0;
+}
+
+.cell.corner.LB {
+  border-radius: 0 0 0 2vmin;
+}
+
+.cell.corner.RB {
+  border-radius: 0 0 2vmin 0;
 }

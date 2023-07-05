@@ -8,7 +8,22 @@ for (let i = 0; i < boardHeight; i++) {
   row.setAttribute('class', 'row');
   for (let j = 0; j < boardWidth; j++) {
     let cell = document.createElement('span');
-    cell.setAttribute('class', 'cell');
+    cell.classList.add('cell');
+    // find corner cells for rounding
+    switch (`${i}${j}`) {
+      case '00':
+        cell.classList.add('LT', 'corner');
+        break;
+      case `${boardWidth-1}0`:
+        cell.classList.add('LB', 'corner');
+        break;
+      case `0${boardHeight-1}`:
+        cell.classList.add('RT', 'corner');
+        break;
+      case `${boardWidth-1}${boardHeight-1}`:
+        cell.classList.add('RB', 'corner');
+        break;
+    }
     row.appendChild(cell);
   }
   board.appendChild(row);
@@ -20,4 +35,3 @@ function fillCell(event) {
   cell.classList.add('full');
 }
 cells.forEach(cell => cell.addEventListener('mouseover', fillCell));
-
