@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#board {
+  width: 70vmin;
+  height: 70vmin;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  border-style: solid;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  aspect-ratio: 1/1;
+
+  background-color: white;
+  border-style:solid;
+}
+
+.cell.full {
+  background-color: black;
+}
