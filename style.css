@@ -1,8 +1,12 @@
 body {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  height: 100vh;
+}
+
+#frame {
 }
 
 #board {
@@ -19,14 +23,32 @@ body {
   border-color: hsl(0 90% 50%);
   background-color: hsl(0 90% 50%);
 
+  margin-top: -7.5vmin; /* allow label on top */
   margin-bottom: -7.5vmin; /* allow buttons on frame */
 }
 
-#frame-bottom {
+#frame-top, #frame-bottom {
   box-sizing: border-box;
   height: 7.5vmin;
   padding: 0 1vmin;
   display: flex;
+}
+
+#frame-top {
+  justify-content: center;
+  align-items: center;
+}
+
+h1 { 
+  font-size: 5vmin;
+  margin: 0;
+  text-align: center;
+  color: hsl(40 60% 50%);
+  text-shadow: black 1px 2px;
+  font-style: italic;
+}
+
+#frame-bottom {
   justify-content: space-between;
 }
 
