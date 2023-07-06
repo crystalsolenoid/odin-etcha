@@ -20,6 +20,7 @@ body {
   border-style: solid;
   border-width: 7.5vmin;
   border-radius: 2vmin;
+  box-shadow: 5px 5px black;
   border-color: hsl(0 90% 50%);
   background-color: hsl(0 90% 50%);
 
