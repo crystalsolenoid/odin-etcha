@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 #board {
@@ -17,6 +18,23 @@ body {
   border-radius: 2vmin;
   border-color: hsl(0 90% 50%);
   background-color: hsl(0 90% 50%);
+
+  margin-bottom: -7.5vmin; /* allow buttons on frame */
+}
+
+#frame-bottom {
+  box-sizing: border-box;
+  height: 7.5vmin;
+  padding: 0 1vmin;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dial {
+  width: 6.5vmin;
+  height: 6.5vmin;
+  border-radius: 3.25vmin;
+  background-color: white;
 }
 
 .row {
