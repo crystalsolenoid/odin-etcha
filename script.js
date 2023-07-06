@@ -1,8 +1,12 @@
 const board = document.querySelector('#board');
 const sizeButton = document.querySelector('#sizeCycle');
+const colorButton = document.querySelector('#colorMode');
+
 let sizeIndex = 0;
 const boardSizes = [16, 32, 8];
 sizeButton.addEventListener('click', cycleBoardSize);
+colorButton.addEventListener('click', e => alert("Color mode switching is not yet implemented."))
+
 updateBoardSize();
 
 function cycleBoardSize() {
